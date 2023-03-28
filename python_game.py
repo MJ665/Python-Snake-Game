@@ -238,7 +238,9 @@ def gameloop():
             gameWindow.fill(white)
             gameWindow.blit(bgimg,(0,0))
 
-            text_screen("Score: "+str(score)+ " High Score: "+highscore, white, 5, 5)
+            #text_screen("Score: "+str(score)+ " High Score: "+highscore, white, 5, 5)
+            text_screen("Score: "+ str(score) + " High Score: " + str(highscore), white, 5, 5)
+
             pygame.draw.rect(gameWindow, red, [food_x, food_y, food_size, food_size])
 
             head=[]
